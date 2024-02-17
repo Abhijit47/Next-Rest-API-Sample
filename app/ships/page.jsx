@@ -1,4 +1,5 @@
 import {
+  GisLocationPoi,
   HeroiconsOutlineMailOpen,
   HeroiconsOutlinePhotograph,
 } from "@/assets/icons";
@@ -89,10 +90,10 @@ export default async function ShipsPage() {
                 </div>
                 <div className="-ml-px flex w-0 flex-1">
                   <Link
-                    href={"#"}
+                    href={`/ships/${ship?._id}`}
                     className="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
                   >
-                    <HeroiconsOutlinePhotograph
+                    <GisLocationPoi
                       className="h-5 w-5 text-gray-400"
                       aria-hidden="true"
                     />
@@ -104,6 +105,15 @@ export default async function ShipsPage() {
           </li>
         ))}
       </ul>
+
+      <div className="flex items-center justify-center py-6">
+        <Link
+          href={"/"}
+          className="rounded-md bg-indigo-500 px-4 py-2 text-sm font-normal text-white"
+        >
+          Go Back
+        </Link>
+      </div>
     </section>
   );
 }
