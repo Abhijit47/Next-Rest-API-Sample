@@ -10,7 +10,7 @@ export async function GET(request) {
   try {
     await connectDB();
 
-    const ships = await Ship.find({}).lean().limit(10);
+    const ships = await Ship.find({}).lean().limit(12);
 
     return new Response(
       JSON.stringify(
