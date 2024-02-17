@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="grid min-h-screen place-items-center xs:p-4 sm:p-6 md:p-12 lg:p-24">
+    <main className="grid min-h-screen place-items-center gap-y-4 xs:p-4 sm:p-6 md:p-12 lg:p-24">
+      <h1 className="font-sans text-4xl font-extrabold text-white">
+        Ship Wrecks
+      </h1>
       <div>
         <Image
           src={
@@ -14,6 +17,8 @@ export default function Home() {
           height={1160}
           priority
           className="h-full w-full rounded-lg"
+          placeholder="blur"
+          blurDataURL="|$L3*#R+n%bHWBj[WCoeay~Ta}aea}jsj[jZj[ayIWazj@ayoej[azazfQIWRkoeayayfQWVj[j@s.afayaza|ayj[j[ayt6jabGayoeazjtayazkBR+oeayj[j[WVazj[WCj@a}j@ayayj@j[j@WCoeWCj[fjayj[a|ay"
         />
       </div>
       <div className="flex items-center justify-center py-6">

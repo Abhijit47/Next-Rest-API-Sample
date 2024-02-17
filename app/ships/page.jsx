@@ -36,7 +36,7 @@ export default async function ShipsPage() {
   const { status, message, data } = await getShips();
   console.log(message);
   return (
-    <section className="mx-auto mt-12 max-w-7xl">
+    <section className="mt-12">
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {data?.map((ship) => (
           <li
