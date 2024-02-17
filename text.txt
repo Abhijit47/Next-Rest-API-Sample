@@ -1,0 +1,16 @@
+Use your new root key to create a new API key for your users:
+curl -XPOST 'https://api.unkey.dev/v1/keys.createKey' \
+  -H 'Authorization: Bearer unkey_3ZjFQhu9B24a1HyCJDgbAEpw' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "apiId": "api_4DnPVhEjLHm2Pshp8kHsbSSk6NGo"
+  }'
+
+using in bash command
+
+curl -XPOST 'https://api.unkey.dev/v1/keys.verifyKey' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "key": "unkey_3ZjFQhu9B24a1HyCJDgbAEpw"
+  }'
+  
